@@ -51,4 +51,4 @@ N’hésitez pas à explorer !
 Ou contactez-moi pour discuter stage/PFE.
 
 [![GitHub](https://img.shields.io/badge/GitHub-000000?style=for-the-badge&logo=github&logoColor=white)](https://github.com/malikaaitlarbi)  
-[![LinkedIn](https://shorturl.at/1CxiI)
+[![LinkedIn](https://www.linkedin.com/in/malika-ait-larbi-565419285?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3B%2Bnf6qUuBSxiv%2Bbf6hLc1xw%3D%3D)
