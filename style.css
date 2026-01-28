@@ -1,69 +1,40 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: Arial, sans-serif;
-}
+*{margin:0;padding:0;box-sizing:border-box;font-family:Segoe UI}
+html{scroll-behavior:smooth}
+body{background:#0f2027;color:white}
 
-body {
-    background: #f4f6f8;
-    color: #333;
-    line-height: 1.6;
-}
+nav{position:fixed;top:0;width:100%;background:#0008;padding:15px;z-index:1000}
+nav ul{display:flex;justify-content:center;gap:25px;list-style:none}
+nav a{color:#00e5ff;text-decoration:none;font-weight:bold}
 
-header {
-    background: #0a3d62;
-    color: white;
-    padding: 60px 20px;
-    text-align: center;
-}
+.section{min-height:100vh;padding:120px 40px;text-align:center}
+.dark{background:#111}
 
-header h1 {
-    font-size: 2.5em;
-}
+.hero img{width:150px;border-radius:50%;margin-bottom:15px;animation:fade 1.5s}
 
-header p {
-    margin: 10px 0 20px;
-}
+h1 span{color:#00e5ff}
 
-.btn {
-    background: #38ada9;
-    color: white;
-    padding: 12px 25px;
-    text-decoration: none;
-    border-radius: 5px;
-}
+.typing{border-right:3px solid;width:0;overflow:hidden;white-space:nowrap;
+animation:typing 3s steps(20) forwards}
 
-section {
-    padding: 50px 20px;
-    max-width: 900px;
-    margin: auto;
+.buttons button{
+  margin:10px;padding:10px 20px;border:none;border-radius:20px;
+  background:#00e5ff;font-weight:bold;cursor:pointer;transition:.3s
 }
+.buttons button:hover{transform:scale(1.1)}
 
-h2 {
-    margin-bottom: 20px;
-    color: #0a3d62;
-}
+iframe{width:80%;height:500px;border:none;display:none;margin-top:20px}
 
-ul li {
-    margin-bottom: 10px;
-}
+.grid{display:flex;gap:20px;justify-content:center;flex-wrap:wrap}
+.card{background:#203a43;padding:30px;border-radius:15px;width:260px;
+transition:.4s}
+.card:hover{transform:translateY(-10px)}
 
-.project {
-    background: white;
-    padding: 20px;
-    margin-bottom: 20px;
-    border-left: 5px solid #38ada9;
-}
+.resume-buttons button{margin:10px;padding:10px 20px}
+.content-box{margin-top:30px;animation:fade .5s}
 
-#contact a {
-    color: #0a3d62;
-    text-decoration: none;
-}
+.contact-box{display:flex;gap:40px;justify-content:center;flex-wrap:wrap}
+form{display:flex;flex-direction:column;width:300px}
+form input,textarea{margin:8px;padding:8px}
 
-footer {
-    background: #0a3d62;
-    color: white;
-    text-align: center;
-    padding: 15px;
-}
+@keyframes typing{to{width:220px}}
+@keyframes fade{from{opacity:0}to{opacity:1}}
