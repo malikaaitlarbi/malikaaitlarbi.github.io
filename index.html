@@ -1,69 +1,92 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Malika Ait Larbi | Portfolio</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <title>AIT-LARBI MALIKA | Portfolio</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-<header>
-    <h1>Malika Ait Larbi</h1>
-    <p>Étudiante ingénieure en Génie Électrique</p>
-    <a href="#contact" class="btn">Me contacter</a>
-</header>
+<nav>
+  <ul>
+    <li><a href="#home">Home</a></li>
+    <li><a href="#services">Services</a></li>
+    <li><a href="#resume">Resume</a></li>
+    <li><a href="#portfolio">Portfolio</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+</nav>
 
-<section id="about">
-    <h2>À propos de moi</h2>
-    <p>
-        Étudiante en dernière année du cycle d’ingénieur en génie électrique,
-        je suis à la recherche d’un stage de fin d’études (PFE).
-        Passionnée par les systèmes électriques, les énergies renouvelables
-        et les véhicules électriques.
-    </p>
+<!-- HOME -->
+<section id="home" class="section hero">
+  <img src="photo.jpg" class="profile">
+  <h1>AIT-LARBI <span>MALIKA</span></h1>
+  <h2 class="typing">Génie Électrique</h2>
+
+  <div class="buttons">
+    <button onclick="openCV()">CV</button>
+    <button onclick="openLinkedIn()">LinkedIn</button>
+  </div>
+
+  <iframe id="cvFrame"></iframe>
 </section>
 
-<section id="skills">
-    <h2>Compétences</h2>
-    <ul>
-        <li>⚡ Génie électrique</li>
-        <li>🔋 Batteries & véhicules électriques</li>
-        <li>📊 Matlab / Simulink</li>
-        <li>💻 Python, C</li>
-        <li>🧠 Intelligence artificielle appliquée</li>
-    </ul>
+<!-- SERVICES -->
+<section id="services" class="section dark">
+  <h2>Services</h2>
+  <div class="grid">
+    <div class="card">🚗 Automobile & Systèmes embarqués</div>
+    <div class="card">⚡ Énergies renouvelables (PV & Éolien)</div>
+    <div class="card">🏭 Systèmes industriels électriques</div>
+  </div>
 </section>
 
-<section id="projects">
-    <h2>Projets académiques</h2>
+<!-- RESUME -->
+<section id="resume" class="section">
+  <h2>Why hire me?</h2>
 
-    <div class="project">
-        <h3>🔋 BMS pour véhicules électriques</h3>
-        <p>Modélisation et simulation d’un système de gestion de batterie (SOC, SOH, équilibrage).</p>
+  <div class="resume-buttons">
+    <button onclick="showContent('experience')">Experience</button>
+    <button onclick="showContent('education')">Education</button>
+    <button onclick="showContent('skills')">Skills</button>
+    <button onclick="showContent('about')">About Me</button>
+  </div>
+
+  <div id="resume-content" class="content-box"></div>
+</section>
+
+<!-- PORTFOLIO -->
+<section id="portfolio" class="section dark">
+  <h2>Projects</h2>
+  <div class="grid">
+    <div class="card">BMS & Estimation SOC</div>
+    <div class="card">Prédiction SOC par IA</div>
+    <div class="card">Bornes de recharge solaire</div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact" class="section">
+  <h2>Let’s work together</h2>
+
+  <div class="contact-box">
+    <div class="info">
+      <p>📞 Phone: +212XXXXXXXX</p>
+      <p>📧 Email: example@email.com</p>
     </div>
 
-    <div class="project">
-        <h3>🌞 Borne de recharge solaire</h3>
-        <p>Conception d’une borne de recharge pour vélos et trottinettes électriques.</p>
-    </div>
-
-    <div class="project">
-        <h3>⚙️ Traitement du signal (DSP)</h3>
-        <p>Analyse spectrale, FFT et implémentation sur DSP TMS320C6713.</p>
-    </div>
+    <form action="https://formspree.io/f/XXXXXX" method="POST">
+      <input type="text" name="name" placeholder="Full Name" required>
+      <input type="email" name="email" placeholder="Email Address" required>
+      <input type="text" name="phone" placeholder="Phone Number">
+      <input type="text" name="subject" placeholder="Email Subject">
+      <textarea name="message" placeholder="Your Message"></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+  </div>
 </section>
 
-<section id="contact">
-    <h2>Contact</h2>
-    <p>Email : <a href="mailto:malika.aitlarbi@email.com">malika.aitlarbi@email.com</a></p>
-    <p>LinkedIn : <a href="#">linkedin.com/in/malika-ait-larbi</a></p>
-    <p>GitHub : <a href="#">github.com/malikaaitlarbi</a></p>
-</section>
-
-<footer>
-    <p>© 2026 Malika Ait Larbi — Portfolio</p>
-</footer>
-
+<script src="script.js"></script>
 </body>
 </html>
